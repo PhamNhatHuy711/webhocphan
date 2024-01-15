@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/headfoot.css">
+    <link rel="stylesheet" href="./public/css/carterogy.css">
+</head>
+    
+<body>
+    <header class="headerpro">
+        <div class="header-top">
+            <div class="conterner-header">
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/themes/jaroti/images/logo.png"
+                            alt="Jaroti" title="Jaroti" class="normal-logo">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item has-submenu">
+                            <a href="home.html" class="menu__link">Trang chủ</a>
+                            <!-- Submenu -->
+                            
+                        </li>
+                        <!-- Thêm class 'has-submenu' cho menu item có submenu -->
+                        <li class="menu__item has-submenu">
+                            <a href="#" class="menu__link">Sản phẩm</a>
+                            <!-- Thêm submenu HTML -->
+                            <div class="submenu">
+                                <div class="submenu-column">
+                                    <a href="carterogyhandbags.html" target="_blank"><h4>Handbags</h4></a>
+                                    <a href="#">Backpacks & luggage</a>
+                                    <a href="#">Basics</a>
+                                    <a href="#">Crossbody bags</a>
+                                    <a href="#">Daily Basics</a>
+                                    <a href="#">Large-sized handbags</a>
+                                    <a href="#">Medium-sized handbags</a>
+                                    <a href="#">Small-sized handbags</a>
+                                    
+                                    <!-- ...more items -->
+                                </div>
+                                <div class="submenu-column">
+                                    
+                                    <a href="./carterogy.html" target="_blank"><h4>Accessories</h4></a>
+                                    <a href="#">Hair Accessory</a>
+                                    <a href="#">Other accessories</a>
+                                    <a href="#">Perfumes</a>
+                                    <a href="#">Scarves & others</a>
+                                    <a href="#">Sungglasses</a>
+                                    <a href="#">Toiletry bags</a>
+                                    <a href="#">Wallets & Purses</a>
+                                    
+                                    <!-- ...more items -->
+                                </div>
+                                <div class="submenu-column">
+                                    <a href="./carterogyjewely.html" target="_blank"><h4>Curated Shops</h4></a>
+                                    <a href="#">Gifts for Her</a>
+                                    <a href="#">Most Popular Jewelry</a>
+                                    <a href="#">New Jewelry</a>
+                                    <a href="#">High Jewelry</a>
+                                    <a href="#">Bold Silver Jewelry</a>
+                                    <a href="#">Stud Earrings</a>
+                                    <a href="#">Hoop Earrings</a>
+                                    
+                                    <!-- ...more items -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://demo.theme-sky.com/jaroti/contact-us/" class="menu__link">Contact us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://demo.theme-sky.com/jaroti/blog/" class="menu__link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Biểu tượng tìm kiếm để kích hoạt thanh tìm kiếm -->
+                <div class="icon">
+                    <div class="search-icon">
+                        <i class="fa fa-search"></i>
+                        SEARCH
+                    </div>
+                    <li class="menu__item">
+                        <i id="cartButton" class="fa-solid fa-basket-shopping menu__link"></i>
+                        <!-- Phần Giỏ Hàng ở đây -->
+                        <div id="shoppingCart" class="shopping-cart">
+                          <div class="cart-items">
+                              <div class="cart-header">
+                                  <div class="header-item">Hình ảnh</div>
+                                  <div class="header-item">Tên sản phẩm</div>
+                                  <div class="header-item">Giá tiền</div>
+                            </div>
+                            <!-- Các mặt hàng trong giỏ hàng sẽ được thêm vào đây -->
+                        </div>
+                        <div class="cart-summary">
+                            <p>Tổng cộng: <span id="cartTotal">$0.00</span></p>
+                        </div>
+                            <a href="./checkout.html"><button class="checkout">Thanh toán</button></a>
+                          <button class="view-cart">Xem Giỏ Hàng</button>
+                        </div>
+                      </li>
+                    <!-- Thanh tìm kiếm bên phải -->
+                    <div class="search-overlay" id="search-overlay">
+                        <!-- Thanh tìm kiếm với nút đóng và input -->
+                        <div class="search-box">
+                            <span id="close-search" class="close-search">&times;</span>
+                            <h5>SEARCH FOR PRODUCTS</h5>
+                            <br>
+                            <input type="text" id="search-input" placeholder="Search for products..." class="form-input border border-2 border-dark rounded-pill p-2">
+                            <button id="search-button" class="search-button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        
+                            
+                        </div>
+                    </div>
+                    <li class="menu__item1">
+                        <a href="login.html" class="menu__link1"> <i class="fa-regular fa-user"></i></a>
+                    </li>
+                </div>
+    
+    
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <form action="" id="form-login">
+            <h2 class="form-headding">Register</h2>
+            <div class="form-group">
+                <div >
+                    <label for="text" class="form-label opacity-50">Username</label>
+                    <span class="required text-danger">*</span>
+                </div>
+                <input type="text" class="form-input border border-2 border-dark rounded-pill p-2" id="text">
+            </div>
+            <div class="form-group">
+                <div >
+                    <label for="email" class="form-label opacity-50">Email address</label>
+                    <span class="required text-danger">*</span>
+                </div>
+                <input type="email" class="form-input border border-2 border-dark rounded-pill p-2" id="email">
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="password" class="form-label opacity-50">Password</label>
+                    <span class="required text-danger">*</span>
+                </div>
+                <div class="border border-2 border-dark rounded-pill p-2">
+                    <input type="password" class="form-input border-0 outline-0" id="password">
+                    <i class="fa-solid fa-eye me-2" style="color: #19191a;"  id="eye"></i>
+                </div>
+                <a class="signin text-dark" href="login.html"> Sign in</a>
+            </div>
+            <input type="submit" value="REGISTER" class="form-submit border border-2 border-dark rounded-pill p-2">
+        </form>
+        
+    </div>
+    <footer class="footervip">
+        <div class="conterner">
+            <div style="width: 18rem;">
+                <ul>
+                    <li class="li2">
+                        <h5>DELIVERY & RETURN</h5>
+                    </li>
+                    <li class="li3">Check Order</li>
+                    <li class="li3">Delivery & Collection</li>
+                    <li class="li3">Careers</li>
+                    <li class="li3">Delivery Return</li>
+                </ul>
+            </div>
+            <div style="width: 18rem;">
+                <ul>
+                    <li class="li2">
+                        <h5>ABOUT</h5>
+                    </li>
+                    <li class="li3">Our Brand</li>
+                    <li class="li3">Charity</li>
+                    <li class="li3">CSR</li>
+                    <li class="li3">Careers</li>
+                </ul>
+            </div>
+            <div style="width: 20rem;">
+                <ul>
+                    <li class="li2">
+                        <H5>CUSTOMER SERVICES</H5>
+                    </li>
+                    <li class="li3">Contact Us</li>
+                    <li class="li3">Opening Hours</li>
+                    <li class="li3">Size Guides</li>
+                    <li class="li3">Gift Cards</li>
+                </ul>
+            </div>
+    
+            <div style="width: 40rem;">
+                <ul>
+                    <li class="li2">
+                        <H4>NEWSLETTER SIGN UP</H4>
+                    </li>
+                    <li class="li3">Enjoy 15% off* your first order when you sign up to our newsletter</li>
+                    <li class="li3">
+                        <form action="#" method="post" id="subscribeForm">
+                            <input type="email" name="email"
+                                class="subscribe-input border border-2 border-dark rounded-pill p-2"
+                                placeholder="Your e-mail address" required>
+                            <button type="submit" class="subscribe-button">Subscribe</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="./public/js/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <script src="./public/js/search.js"></script>
+    <script src="./public/js/cart.js"></script>
+</html>

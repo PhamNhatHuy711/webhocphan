@@ -1,0 +1,14 @@
+.search-icon {
+    cursor: pointer;
+  }
+  
+  #search-container {
+    display: none;
+    /* ... các thuộc tính khác để định vị và thiết kế thanh tìm kiếm ... */
+  }
+  
+  /* Khi class 'active' được thêm vào, thanh tìm kiếm sẽ hiển thị */
+  #search-container.active {
+    display: block;
+  }
+  

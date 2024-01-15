@@ -1,0 +1,249 @@
+.conterner {
+  display: flex;
+  align-items: start;
+  padding: 2rem;
+}
+.conterner-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #999;
+  height: 130px;
+}
+.header-top {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(235, 235, 235, 1);
+  color: rgba(0, 0, 0, 1)
+}
+
+.normal-logo {
+  width: 150px;
+  height: 50px;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+/* search nè kuuuu */
+/* Định dạng cho biểu tượng tìm kiếm */
+.search-icon {
+  cursor: pointer;
+  transition: color 0.2s linear;
+  margin-left: 1rem;
+  /* Định dạng khác tùy theo yêu cầu của bạn */
+}
+.search-icon:hover{
+  color: red;
+  
+}
+
+/* Style cho overlay và thanh tìm kiếm */
+.search-overlay {
+  display: none; /* Ẩn thanh tìm kiếm khi không hoạt động */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: width 0.5s ease;
+  z-index: 1000;
+}
+
+.search-box {
+  width: 400px; /* Hoặc bất kỳ chiều rộng nào bạn muốn */
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: -400px; /* Đẩy khung tìm kiếm ra khỏi màn hình */
+  transition: right 0.5s ease;
+}
+
+/* Style cho nút đóng */
+.close-search {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Khi thanh tìm kiếm được hiển thị */
+.search-overlay.show {
+  width: 100%;
+}
+
+.search-box.show {
+  right: 0; /* Kéo khung tìm kiếm vào màn hình */
+}
+
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  width: 100%;
+}
+.menu {
+  position: relative;
+  z-index: 1000;
+  height: 66px;
+
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  height: 66px;
+
+}
+
+.menu__item {
+  margin: 0 2.5rem;
+  color: black;
+  
+}
+
+.menu__link {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.2s linear;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.menu__link:hover {
+  color: red;
+}
+.menu__item1 {
+  margin-right: 2.5rem;
+  color: black;
+  width: 0px;
+  margin-left: 1rem;
+}
+
+.menu__link1 {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.2s linear;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+
+}
+.menu__link1:hover {
+  color: red;
+
+}
+.icon{
+  list-style: none;
+  display: flex;
+  align-items: end;
+}
+/* menu đa cấp */
+/* CSS để ẩn menu con ban đầu */
+.submenu {
+  display: none;
+  position:absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 1800px;
+  z-index: 9999;
+  left: -380px;
+  
+}
+
+.submenu-column {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  z-index: 1000;
+  
+}
+
+.submenu-column h4 {
+
+  z-index: 1000;
+  margin-bottom: 30px;
+  margin-right: 200px;
+  font-weight: bold;
+  
+  
+  
+}
+.menu__item:hover .submenu {
+  display: block;
+}
+.submenu-column a {
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: rgb(52, 51, 51);
+  margin-right: 100px;
+  font-size: 15px;
+  text-align: start;
+}
+.submenu-column a:hover {
+  color:red;
+}
+/* Footer */
+
+
+.footervip {
+  background-color: black;
+}
+
+.footervip .conterner {
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.li2 {
+  color: aliceblue
+}
+
+.li3 {
+  color: #858383;
+  line-height: 22px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+ul {
+  list-style: none;
+}
+
+.subscribe-form {
+  text-align: center;
+}
+
+.subscribe-input {
+  padding: 4px;
+  font-size: 16px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #eef3ee;
+  color: black;
+}
